@@ -108,13 +108,31 @@ body {
         font-style: bold;
       }
     
-      .btn {
+      .bttn {
         font-size: 30px;
         width: 100px;
         border-radius: 10px;
         color: yellow;
         background-color: black;
         border: 3px solid white;
+      }
+        .btn{
+        float: right;
+        /* color:white; */
+        padding-right: 10px;
+        /* border: 2px solid red;; */
+        padding-top: 450px;
+     
+        
+      }
+      .btn a{
+        background-color: black;
+        font-size: xx-large;
+        border-radius:5px;
+        border: 5px solid white;
+        text-decoration: none;
+        font-weight: bold;
+        color: skyblue;
       }
     </style>
   </head>
@@ -160,8 +178,15 @@ body {
           ></textarea>
         </label>
         <!-- your other form fields go here -->
-        <button type="submit" class="btn">Send</button>
+        <button type="submit" class="bttn">Send</button>
       </form>
     </div>
+      <!-- try to add home page button and top button -->
+      <div class="btn">
+        <button>
+          <a href="/index.html">homePage</a>
+        </button>
+      </div>
+
   </body>
 </html>
