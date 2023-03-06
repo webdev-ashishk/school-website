@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        padding-top: 5px;
+      }
+      @import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+h1 {
+  font-size: calc(20px + 18vh);
+  line-height: calc(20px + 20vh);
+/*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+  color: #fccaff; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+body {
+  padding: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #222;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 7px,
+    rgba(0, 0, 0, 0.8) 9px,
+    rgba(0, 0, 0, 0.8) 13px,
+    transparent 13px
+  );
+}
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+/*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+/*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+      .contact-form {
+        display: flex;
+        justify-content: center;
+        font-size: xx-large;
+        font-weight: bold;
+        color: yellow;
+      }
+      .name,
+      .email,.text-area {
+        width: 300px;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: x-large;
+        font-style: bold;
+      }
+    
+      .btn {
+        font-size: 30px;
+        width: 100px;
+        border-radius: 10px;
+        color: yellow;
+        background-color: black;
+        border: 3px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>contact me first-time</h1>
+    <div class="contact-form">
+      <form action="https://formspree.io/f/mrgvkpow" method="POST">
+        <label>
+          Name:
+          <input
+            type="text"
+            placeholder="Write Your Name"
+            class="name"
+            required
+          />
+        </label>
+        <br />
+        <br />
+        <label>
+          Email:
+          <input
+            type="email"
+            name="email"
+            class="email"
+            placeholder="Write Your email"
+            autocomplete="on"
+            required
+          />
+        </label>
+        <br />
+        <br />
+        <label>
+          Message:
+          <textarea
+          placeholder="Write Your Message"
+
+            class="text-area"
+            name="message"
+            rows="5"
+            cols="50"
+            autocomplete="on"
+            required
+          ></textarea>
+        </label>
+        <!-- your other form fields go here -->
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </div>
+  </body>
+</html>
